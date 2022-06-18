@@ -1,0 +1,469 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* font-size: 100%; */
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+  font-family: dana !important;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+li,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 10;
+  src: url("./woff2/Dana-Hairline.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-Hairline.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 100;
+  src: url("./woff2/Dana-Thin.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-Thin.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 200;
+  src: url("./woff2/Dana-UltraLight.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-UltraLight.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./woff2/Dana-Light.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-Light.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./woff2/Dana-Medium.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-Medium.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 600;
+  src: url("./woff2/Dana-DemiBold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-DemiBold.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 800;
+  src: url("./woff2/Dana-ExtraBold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-ExtraBold.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 900;
+  src: url("./woff2/Dana-Black.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-Black.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 930;
+  src: url("./woff2/Dana-ExtraBlack.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-ExtraBlack.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 960;
+  src: url("./woff2/Dana-Heavy.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-Heavy.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 990;
+  src: url("./woff2/Dana-Fat.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-Fat.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: bold;
+  src: url("./woff2/Dana-Bold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-Bold.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./woff2/Dana-Regular.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./woff/Dana-Regular.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+body {
+  font-family: dana !important;
+  direction: rtl;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+  font-family: dana !important;
+}
+
+/* container style */
+.container {
+  width: 600px;
+  height: 400px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+  border-radius: 5px;
+}
+/* login-form */
+.login-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.6s ease;
+}
+.login-form h1 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.login-form div.social {
+  margin-bottom: 10px;
+}
+.login-form div.social a {
+  margin: 0 10px;
+}
+.login-form div.social a i {
+  color: #000;
+}
+.login-form span {
+  margin-bottom: 15px;
+}
+.login-form input {
+  margin-bottom: 15px;
+  background-color: #efefef;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.login-form a {
+  margin-bottom: 15px;
+  color: #000;
+}
+.login-form button {
+  background-color: #039be5;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-family: dana;
+  transition: all 0.6s ease;
+}
+.login-form button:hover {
+  cursor: pointer;
+  background-color: #0277bd;
+}
+.login-form button:active {
+  transform: scale(0.9);
+}
+
+/* overlay-login */
+.overlay-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #de6161;
+  background: linear-gradient(to right, #de6161, #2657eb);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  z-index: 2;
+  transition: all 0.6s ease;
+}
+.overlay-1 span {
+  margin-bottom: 15px;
+}
+.overlay-1 p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.overlay-1 button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 8px 30px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-family: dana;
+  transition: all 0.5s ease;
+}
+.overlay-1 button:hover {
+  cursor: pointer;
+}
+.overlay-1 button:active {
+  transform: scale(0.9);
+}
+
+/* register-form */
+.register-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
+  visibility: hidden;
+  transition: all 0.6s ease;
+}
+.register-form h1 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.register-form div.social {
+  margin-bottom: 10px;
+}
+.register-form div.social a {
+  margin: 0 10px;
+}
+.register-form div.social a i {
+  color: #000;
+}
+.register-form span {
+  margin-bottom: 15px;
+}
+.register-form input {
+  margin-bottom: 15px;
+  background-color: #efefef;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.register-form a {
+  margin-bottom: 15px;
+  color: #000;
+}
+.register-form button {
+  background-color: #039be5;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-family: dana;
+  transition: all 0.6s ease;
+}
+.register-form button:hover {
+  cursor: pointer;
+  background-color: #0277bd;
+}
+.register-form button:active {
+  transform: scale(0.9);
+}
+
+/* overlay-register */
+.overlay-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #de6161;
+  background: linear-gradient(to right, #de6161, #2657eb);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+  z-index: 1;
+  visibility: hidden;
+  transition: all 0.6s ease;
+}
+.overlay-2 span {
+  margin-bottom: 15px;
+}
+.overlay-2 p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.overlay-2 button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 8px 30px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-family: dana;
+  transition: all 0.5s ease;
+}
+.overlay-2 button:hover {
+  cursor: pointer;
+}
+.overlay-2 button:active {
+  transform: scale(0.9);
+}
+
+.alt .login-form {
+  visibility: hidden;
+  transform: translatex(100%);
+}
+.alt .overlay-1 {
+  visibility: hidden;
+  transform: translatex(-100%);
+}
+.alt .register-form {
+  visibility: visible;
+  z-index: 3;
+  transform: translatex(100%);
+}
+.alt .overlay-2 {
+  position: absolute;
+  visibility: visible;
+  z-index: 3;
+  transform: translatex(-100%);
+}
